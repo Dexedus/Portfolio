@@ -1,8 +1,8 @@
 
-
 /*Header Styling*/
 .header-container{
     display: flex;
+    width: 100%;
     justify-content: space-around;
     background-color: rgb(0, 167, 218);
     color: white;
@@ -10,10 +10,17 @@
     align-items: center;
     font-size: 1.1em;
     border-bottom: solid 3px rgb(36, 127, 163);
+    z-index: 22;
 }
 
 .navlink{
     margin: 0;
+    transition: font-size 1s;
+}
+.navlink:hover{
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(214, 214, 214);
 }
 
 #logo{
@@ -23,32 +30,100 @@
     margin-left: -40px;
 }
 
+.LogoLink, .nav-item{
+    text-decoration: none;
+    color: white;
+}
+
 /*Header Styling*/
 
 
 
 /* Content Styles*/
 .profile{
-    background-color: rgb(255, 255, 255);
-    height: 85vh;
+    position: relative;
+    height: 90vh;
     display: flex;
     flex-direction: column;
+    justify-items: start;
     align-items: center;
     border-right: solid 1.5px rgb(36, 127, 163);
+    background: linear-gradient(0deg,rgb(190, 205, 207), rgb(211, 221, 223), rgb(255, 255, 255))
+
 }
 
 .profileIMG{
-    height: 200px;
+    height: 140px;
     border-radius: 100px;
+    margin-top: 50px;
+    transition: height 1s;
+    z-index: 10;
+}
+.profileIMG:hover{
+    height: 160px;
+}
+    
+
+.profileBIO{
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 1.5rem;
+    z-index: 20;
 }
 
 .short-bio{
-    background-color: white;
-    height: 85vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     border-left: solid 3px rgb(36, 127, 163);
+    background-color: rgb(238, 238, 238);
+    
+    z-index: 21;
+}
+
+.MeTitle{
+    font-size: 7rem!important;
+    float:left;
+    z-index: 10;
+    
+}
+
+.MeBio{
+    
+    font-size: 2rem;
+    width: 420px;
+}
+
+
+
+.cloud{
+    height: 120px;
+    transition: height 0.5s;
+}
+.cloud:hover{
+    height: 124px;
+}
+
+#cloud1{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+   
+}
+
+#cloud2{
+    position: absolute;
+    top: 18%;
+    right: 7%;
+    z-index: 11;
+}
+
+#cloud3{
+    position: absolute;
+    right: 20%;
+    bottom: 13%;
+    z-index: 11;
 }
 
 /* Content Styles*/
@@ -59,11 +134,24 @@
 /*footer styles*/
 footer{
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     background-color: rgb(0, 167, 218);
     display: flex;
+    justify-content: center;
     height: 60px;
     border-top: solid 3px rgb(36, 127, 163);
+    z-index: 50;
 
+}
+
+svg{
+    height: 40px;
+    width: 40px;
+    color: white;
+    margin-inline: 20px;
+    margin-top: 11%;
 }
 
 /*footer styles*/

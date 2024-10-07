@@ -1,10 +1,21 @@
 <%- include("partials/header.ejs")  %>
 
-<div class="row">
-  <div class="col-md-3 col-sm-12 profile">
+<div class="row g-0">
+  <div class=" col-md-3 col-sm-12 profile">
     <img class="profileIMG" src="/images/ME.PNG">
+    <div class="cloudContainer">
+      <img class="cloud" id="cloud1" src="/images/cloud.webp" alt="cloud">
+      <img class="cloud" id="cloud2" src="/images/cloud.webp" alt="cloud">
+      <img class="cloud" id="cloud3" src="/images/cloud.webp" alt="cloud">
+    </div>
+    <p class="profileBIO">Hi! My name is Karl. Welcome to my portfolio!</p>
   </div>
-  <div class="col-md-9 col-sm-12 short-bio">d</div>
+  <div class="col-md-9 col-sm-12 short-bio">
+    <div class="short-bioContainer">
+     <h2 class="MeTitle">Me</h2>
+     <p class="MeBio">I am a qualified electrician, now aspiring software developer from the Republic of Ireland. Please, check out some of my other <a href="/Projects">work!</a></p>
+    </div>
+  </div>
 </div>
 
 <%- include("partials/footer.ejs")  %>
