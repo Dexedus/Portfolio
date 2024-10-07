@@ -171,6 +171,36 @@ body{
 
 }
 
+
+
+.MyProjects{
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+
+.carouselContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel, .slide{
+    height: 500px;
+    width: 1000px;
+}
+
+.carousel-caption{
+    background-color: rgb(19, 174, 221);
+    border-radius: 10px;
+}
+
+.carousel-inner{
+    border: solid 5px rgb(19, 174, 221);
+}
+
 /* Content Styles*/
 
 
