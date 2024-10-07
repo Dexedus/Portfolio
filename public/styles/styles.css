@@ -37,6 +37,10 @@
     border-right: solid 1.5px rgb(36, 127, 163);
 }
 
+.profileIMG{
+    height: 200px;
+    border-radius: 100px;
+}
 
 .short-bio{
     background-color: white;
