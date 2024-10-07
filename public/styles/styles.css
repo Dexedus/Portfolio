@@ -174,7 +174,7 @@ body{
 
 
 .MyProjects{
-    margin-top: -100px;
+    margin-top: -70px;
     margin-bottom: 50px;
 }
 
@@ -231,7 +231,19 @@ svg{
 
 /*footer styles*/
 
+@media(max-width: 1000px){
+    .carousel, .slide{
+        width: 640px;
+        height: 350px;
+    }
 
+
+    .carousel-caption{
+        display: none;
+        
+    }
+    
+}
 
 
 
@@ -271,5 +283,10 @@ svg{
     .profile{
         border-right: none
     
+    }
+
+        .carousel, .slide{
+        width: 330px;
+        height: 220px;
     }
 }
