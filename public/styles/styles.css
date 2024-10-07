@@ -1,4 +1,5 @@
 
+
 /*Header Styling*/
 .header-container{
     display: flex;
@@ -8,6 +9,7 @@
     height: 60px;
     align-items: center;
     font-size: 1.1em;
+    border-bottom: solid 3px rgb(36, 127, 163);
 }
 
 .navlink{
@@ -18,8 +20,46 @@
     font-family: Mr De Haviland;
     font-size: 2.1em;
     align-self: flex-start;
+    margin-left: -40px;
 }
+
 /*Header Styling*/
 
 
 
+/* Content Styles*/
+.profile{
+    background-color: rgb(255, 255, 255);
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: solid 1.5px rgb(36, 127, 163);
+}
+
+
+.short-bio{
+    background-color: white;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: solid 3px rgb(36, 127, 163);
+}
+
+/* Content Styles*/
+
+
+
+
+/*footer styles*/
+footer{
+    width: 100%;
+    background-color: rgb(0, 167, 218);
+    display: flex;
+    height: 60px;
+    border-top: solid 3px rgb(36, 127, 163);
+
+}
+
+/*footer styles*/
