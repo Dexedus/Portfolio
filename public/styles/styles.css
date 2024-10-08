@@ -1,4 +1,6 @@
-
+html{
+    cursor: default;
+}
 /*Header Styling*/
 .header-container{
     position: fixed;
@@ -15,17 +17,23 @@
 }
 
 body{
-   background: linear-gradient(0deg,rgb(190, 205, 207), rgb(211, 221, 223), rgb(255, 255, 255))
+   background: linear-gradient(0deg,rgb(171, 188, 190), rgb(218, 225, 226), rgb(255, 255, 255))
 }
 
 .navlink{
     margin: 0;
-    transition: font-size 1s;
+    transition: transform 1s
 }
 .navlink:hover{
-    font-size: 20px;
+    transform: scale(1.05);
     cursor: pointer;
-    color: rgb(214, 214, 214);
+    color: rgb(177, 177, 177);
+}
+a:hover{
+    color: rgb(202, 202, 202);
+}
+#work:hover{
+    color: rgb(0, 167, 218);
 }
 
 #logo{
@@ -53,7 +61,7 @@ body{
     justify-items: start;
     align-items: center;
     border-right: solid 1.5px rgb(36, 127, 163);
-    background: linear-gradient(0deg,rgb(190, 205, 207), rgb(211, 221, 223), rgb(255, 255, 255))
+    background: linear-gradient(0deg,rgb(171, 188, 190), rgb(218, 225, 226), rgb(255, 255, 255))
 
 }
 
@@ -61,11 +69,11 @@ body{
     height: 140px;
     border-radius: 100px;
     margin-top: 120px!important;
-    transition: height 1s;
+    transition: transform 1s;
     z-index: 10;
 }
 .profileIMG:hover{
-    height: 160px;
+    transform: scale(1.10);
 }
     
 
@@ -151,6 +159,7 @@ body{
 }
 
 .AboutMe{
+    text-align: center;
     border: solid black;
     border-bottom: none;
     background-color: white;
@@ -163,6 +172,7 @@ body{
 
 
 .AboutMeText{
+    text-align: center;
     border: solid black;
     background-color: white;
     border-top: solid white;
@@ -193,12 +203,12 @@ body{
 }
 
 .carousel-caption{
-    background-color: rgb(19, 174, 221);
+    background-color: rgb(9, 138, 177);
     border-radius: 10px;
 }
 
 .carousel-inner{
-    border: solid 5px rgb(19, 174, 221);
+    border: solid 5px rgb(36, 127, 163);
 }
 
 /* Content Styles*/
@@ -241,6 +251,11 @@ svg{
     .carousel-caption{
         display: none;
         
+    }
+
+    .profile{
+        border-right: none
+    
     }
     
 }

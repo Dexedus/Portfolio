@@ -1,7 +1,8 @@
 <%- include("partials/header.ejs")  %>
 
 <div class="row g-0">
-  <div class=" col-md-3 col-sm-12 profile">
+  
+    <div class=" col-md-3 col-sm-12 profile">
     <img class="profileIMG" src="/images/ME.PNG">
     <div class="cloudContainer">
       <img class="cloud" id="cloud1" src="/images/cloud.webp" alt="cloud">
@@ -9,11 +10,13 @@
       <img class="cloud" id="cloud3" src="/images/cloud.webp" alt="cloud">
     </div>
     <p class="profileBIO">Hi! My name is Karl. Welcome to my portfolio!</p>
+    <img src="/images/file.png" style="position: fixed; bottom: 0;">
   </div>
+
   <div class="col-md-9 col-sm-12 short-bio">
     <div class="short-bioContainer">
      <h2 class="MeTitle">Me.</h2>
-     <p class="MeBio">I am a qualified electrician, now aspiring software developer from Ireland. Please, check out some of my other <a href="/Projects">work!</a></p>
+     <p class="MeBio">I am a qualified electrician, now aspiring software developer from Ireland. Please, check out some of my other <a id="work" href="/Projects">work!</a></p>
     </div>
   </div>
 </div>
