@@ -24,6 +24,11 @@ app.get("/ContactMe", (req, res) => {
     res.render("contact.ejs")
   });
 
+app.post("/submit", (req, res) => {
+    console.log(req.body);
+    res.redirect("/ContactMe")
+})
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
   });
