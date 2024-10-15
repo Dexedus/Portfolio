@@ -22,12 +22,15 @@ body{
 
 .navlink{
     margin: 0;
-    transition: transform 1s
+    transition: color 1s, transform 1s
 }
 .navlink:hover{
     transform: scale(1.05);
     cursor: pointer;
     color: rgb(177, 177, 177);
+}
+a{
+    transition: color 1s ease-in-out;
 }
 a:hover{
     color: rgb(202, 202, 202);
