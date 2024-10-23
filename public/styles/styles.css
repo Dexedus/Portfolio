@@ -63,7 +63,6 @@ a:hover{
     flex-direction: column;
     justify-items: start;
     align-items: center;
-    border-right: solid 1.5px rgb(36, 127, 163);
     background: linear-gradient(0deg,rgb(171, 188, 190), rgb(218, 225, 226), rgb(255, 255, 255))
 
 }
@@ -85,6 +84,9 @@ a:hover{
     margin-top: 12vh;
     font-size: 1.5rem;
     z-index: 20;
+    animation-name: riseIn;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
 }
 
 .short-bio{
@@ -92,10 +94,16 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: solid 3px rgb(36, 127, 163);
+    border-left: solid 4px rgb(36, 127, 163);
     background-color: rgb(238, 238, 238);
     
     z-index: 21;
+}
+
+.short-bioContainer{
+    animation-name: fromTheSide;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
 }
 
 .MeTitle{
@@ -115,6 +123,7 @@ a:hover{
 .cloud{
     height: 120px;
     transition: height 0.5s;
+    
 }
 .cloud:hover{
     height: 124px;
@@ -124,21 +133,32 @@ a:hover{
     position: absolute;
     top: 40%;
     left: 5%;
-   
+    animation-name: cloud-movementOne;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #cloud2{
     position: absolute;
-    top: 18%;
+    top: 23%;
     right: 7%;
     z-index: 11;
+    animation-name: cloud-movementTwo;
+    animation-duration: 85s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #cloud3{
     position: absolute;
     right: 20%;
-    bottom: 13%;
-    z-index: 22;
+    bottom: 20%;
+    z-index: 11;
+    animation-name: cloud-movementThree;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .hill{
@@ -360,3 +380,79 @@ svg{
         height: 220px;
     }
 }
+
+
+@keyframes cloud-movementOne {
+
+    0%{
+        transform: translateX(-150px);
+    }
+
+    50%{
+        transform: translateX(600px);
+    }
+    
+    100%{
+        transform: translateX(-150px);
+    }
+}
+
+@keyframes cloud-movementTwo {
+
+    0%{
+        transform: translateX(150px);
+    }
+
+    50%{
+        transform: translateX(-600px);
+    }
+    
+    100%{
+        transform: translateX(150px);
+    }
+}
+
+@keyframes cloud-movementThree {
+
+    0%{
+        transform: translateX(210px);
+    }
+
+    50%{
+        transform: translateX(-600px);
+    }
+    
+    100%{
+        transform: translateX(210px);
+    }
+}
+
+
+@keyframes riseIn {
+
+    0%{
+        scale: 0.5;
+        transform: translateY(400px);
+        color: #21252900;
+    }
+
+    75%{
+        transform: translateY(-5px);
+        color: #21252994;
+    }
+
+    100%{
+        transform: translateY(0px);
+        color: #212529;
+    }
+
+}
+
+ @keyframes fromTheSide {
+
+    0%{
+        position: fixed;
+        transform: translateX(1000px)
+    }        
+ }
+    
