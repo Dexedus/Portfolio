@@ -84,7 +84,12 @@ a:hover{
     margin-top: 12vh;
     font-size: 1.5rem;
     z-index: 20;
+    scale: 0.1;
+    transform: translateY(400px);
+    color: #21252900;
     animation-name: riseIn;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
     animation-duration: 1.2s;
     animation-timing-function: ease-out;
 }
@@ -101,7 +106,11 @@ a:hover{
 }
 
 .short-bioContainer{
+    transform: translateX(400px);
+    opacity: 0%;
+    animation-delay: 1s;
     animation-name: fromTheSide;
+    animation-fill-mode: forwards;
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
 }
@@ -431,7 +440,7 @@ svg{
 @keyframes riseIn {
 
     0%{
-        scale: 0.5;
+        scale: 0.1;
         transform: translateY(400px);
         color: #21252900;
     }
@@ -444,6 +453,7 @@ svg{
     100%{
         transform: translateY(0px);
         color: #212529;
+        scale: 1;
     }
 
 }
@@ -451,8 +461,15 @@ svg{
  @keyframes fromTheSide {
 
     0%{
-        position: fixed;
-        transform: translateX(1000px)
-    }        
+        opacity: 0%;
+
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 100%;
+
+    }
+    
  }
     
