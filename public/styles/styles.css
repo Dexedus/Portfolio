@@ -202,36 +202,41 @@ a:hover{
     transform: scale(1.3);
 }
 
+.Click{
+    animation-name: click;
+    animation-duration: 1s;
+}
+
 #symbolone{
-  animation: appearOne 1.5s 1s forwards, shakeOne 1s 8s;
+  animation: appearOne 1.5s 1s forwards, shakeOne 1s 4.5s;
 }
 
 #symboltwo{
-    animation: appearTwo 1.5s 2s forwards, shakeTwo 1s 8.5s;
+    animation: appearTwo 1.5s 2s forwards, shakeTwo 1s 5s;
 }
 
 #symbolthree{
-    animation: appearThree 1.5s 3s forwards, shakeThree 1s 9s;
+    animation: appearThree 1.5s 3s forwards, shakeThree 1s 5.5s;
 }
 
 #symbolfour{
-    animation: appearFour 1.5s 4s forwards, shakeFour 1s 9.5s;
+    animation: appearFour 1.5s 4s forwards, shakeFour 1s 6s;
 }
 
 #symbolfive{
-    animation: appearFive 1.5s 5s forwards, shakeFive 1s 10s;
+    animation: appearFive 1.5s 5s forwards, shakeFive 1s 6.5s;
 }
 
 #symbolsix{
-    animation: appearSix 1.5s 6s forwards, shakeSix 1s 10.5s;
+    animation: appearSix 1.5s 6s forwards, shakeSix 1s 7s;
 }
 
 #symbolseven{
-    animation: appearSeven 1.5s 7s forwards, shakeSeven 1s 11s;
+    animation: appearSeven 1.5s 7s forwards, shakeSeven 1s 7.5s;
 }
 
 #symboleight{
-    animation: appearEight 1.5s 8s forwards, shakeEight 1s 11.5s;
+    animation: appearEight 1.5s 8s forwards, shakeEight 1s 8s;
 }
 
 svg{
@@ -415,6 +420,26 @@ footer{
     }
 
     
+}
+
+@media(max-height: 770px){
+    .carousel, .slide{
+        width: 640px;
+        height: 350px;
+    }
+
+
+    .carousel-caption{
+        display: none!important;
+        
+    }
+}
+
+@media (max-height: 620px){
+    .carousel, .slide{
+        width: 330px;
+        height: 220px;
+    }
 }
 
     
@@ -700,4 +725,30 @@ footer{
     50%{
         scale: 1.3;
     }
+ }
+
+
+ @keyframes click {
+    0%{
+        transform: translateX(200);
+
+    }
+    10%{
+        transform: translateX(-200px);
+
+    }
+    30%{
+        transform: translateX(120px);
+
+    }
+    60%{
+        transform: translateX(-50px);
+    
+    }
+    100%{
+        transform: translateX(0px);
+
+    }
+    
+    
  }
