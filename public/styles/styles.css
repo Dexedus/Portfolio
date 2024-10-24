@@ -1,6 +1,12 @@
 html{
     cursor: default;
+    overflow-x: hidden;
 }
+body{
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
 /*Header Styling*/
 .header-container{
     position: fixed;
