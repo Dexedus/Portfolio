@@ -259,6 +259,7 @@ svg{
     height: 100vh;
     justify-content: center;
     align-items: center;
+    min-height: 832px;
 }
 
 #About{
@@ -266,7 +267,6 @@ svg{
     height: 100%;
     padding-left:  20px;
     padding-right: 20px;
-    padding-bottom: 100px;
     background-color: white;
     border-right: solid rgb(36, 127, 163);
     border-left: solid rgb(36, 127, 163);
