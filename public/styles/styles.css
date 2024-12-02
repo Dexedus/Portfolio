@@ -284,7 +284,6 @@ svg{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    min-height: 832px;
 }
 
 #About{
@@ -297,8 +296,7 @@ svg{
     max-width: 500px;
     padding-bottom: 100px;
     text-align: center;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
 
 }
 
@@ -472,6 +470,10 @@ footer{
         height: 350px;
     }
 
+    svg{
+        height: 50px!important;
+        width: 50px!important;
+    }
 
     .carousel-caption{
         display: none!important;
@@ -483,6 +485,18 @@ footer{
     .carousel, .slide{
         width: 330px;
         height: 220px;
+    }
+
+    .About{
+        min-height: 620px;
+    }
+
+    html{
+        overflow-y: hidden ;
+    }
+
+    .symbolsListContainer{
+        display: none;
     }
 }
 
